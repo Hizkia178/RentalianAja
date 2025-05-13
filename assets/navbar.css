@@ -1,0 +1,63 @@
+    /* Hover untuk nav link */
+    .nav-hover {
+        transition: all 0.3s ease;
+    }
+
+    .nav-hover:hover {
+        color: #0d6efd !important;
+        transform: translateY(-2px);
+    }
+
+    /* Glow icon pas hover */
+    .nav-hover i {
+        transition: color 0.3s ease;
+    }
+
+    .nav-hover:hover i {
+        color: #0a58ca !important;
+    }
+
+    /* Dropdown shadow & layout */
+    .dropdown-menu {
+        background-color: #fff;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        border-radius: 12px;
+    }
+
+    .profile-card {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background: rgba(248, 249, 250, 0.95);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        z-index: 2;
+        gap: 1rem;
+    }
+
+    .profile-card:hover {
+        transform: translateY(-3px);
+    }
+
+    .profile-card .profile-icon {
+        font-size: 2.5rem;
+        color: #5B72F2;
+        background: #fff;
+        padding: 8px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-card .profile-details h6 {
+        margin: 0;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #1a1a1a;
+    }
+
+    .profile-card .profile-details small {
+        font-size: 0.85rem;
+        color: #6c757d;
+    }

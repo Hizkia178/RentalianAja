@@ -1,0 +1,163 @@
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: left;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-left: 50%;
+    margin-right: 5%;
+}
+
+.car-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.car-title i {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.car-description {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.car-description i {
+    margin-right: 8px;
+    color: #fff;
+}
+
+.timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.timer i {
+    margin-right: 8px;
+}
+
+.social-links {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.social-links a {
+    color: white;
+    margin: 5px 0;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #5B72F2;
+}
+
+.btn-book,
+.btn-detail {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
+
+.btn-book i,
+.btn-detail i {
+    margin-right: 8px;
+}
+
+.promo-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: tomato;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: pulse 2s infinite;
+    z-index: 3;
+}
+
+.promo-icon i {
+    margin-right: 8px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+}
+
+.swiper-pagination-bullet-active {
+    background: #5B72F2;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        margin: 0 5%;
+        text-align: center;
+    }
+
+    .car-title {
+        font-size: 2rem;
+    }
+
+    .car-description {
+        font-size: 1rem;
+    }
+
+    .timer {
+        font-size: 1.2rem;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+    }
+
+    .promo-icon {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}

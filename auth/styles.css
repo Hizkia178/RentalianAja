@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bx-shadow:0px 8px 16px rgba(0,0,0,0.2);
+    --txt-color:#fff;
+    --primary-bg:#0d6efd;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ecf0f1;
+}
+
+
+.container {
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--bx-shadow);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+
+
+.input-container {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-container label {
+    font-weight: bold;
+    display: block;
+    color: #2c3e50;
+}
+
+.input-container i {
+    position: absolute;
+    left: 20px;
+    top: 60%;
+    font-size: 13px;
+    transform: translateX(-50%);
+    color: #7f8c8d;
+}
+
+.input-container input,
+.input-container select {
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-container input:focus,
+.input-container select:focus {
+    border-color: #3498db;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: var(--primary-bg);
+    border: none;
+    box-shadow: var(--bx-shadow);
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+
+
+.link-span {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+.link-span p {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.link-span span a {
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.link-span span a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+    .form-grid {
+        flex-direction: column;
+        gap: 0;
+    }
+    .input-container {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 22px;
+    }
+    .submit-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
